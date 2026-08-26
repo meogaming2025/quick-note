@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Copy Note</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Nút bấm mở UI ở góc màn hình -->
+  <button id="toggle-btn" title="Mở bảng ghi chú">📋</button>
+
+  <!-- Giao diện lưu trữ văn bản -->
+  <div id="note-box" class="hidden">
+    <div class="note-header">
+      <span>Ghi Chú Nhanh</span>
+      <button id="close-btn">✕</button>
+    </div>
+    <div class="note-body">
+      <textarea id="text-input" placeholder="Nhập hoặc dán văn bản vào đây..."></textarea>
+      <div class="actions">
+        <button id="save-btn">Lưu văn bản</button>
+      </div>
+      <ul id="text-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
